@@ -1,0 +1,129 @@
+/*-----------------  GOOGLE FONTS  -----------------*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+/*-----------------  VARIABLES  -----------------*/
+:root {
+    /* Colors */ 
+    --white_color : rgb(255, 255, 255);
+    --gold_color: rgb(255, 215, 0);
+    --green_color: rgb(83, 122, 79);
+    --body_background: linear-gradient(to right, #141e30, #243b55);
+    --spin_background: linear-gradient(to right, #fc4a1a, #f7b733);
+}
+/*-----------------  Base  -----------------*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Serif', serif;
+}
+body {
+  height: 100vh;
+  background: var(--body_background);
+}
+/*-----------------  Styling Start  -----------------*/
+h1 {
+  position: absolute;
+  font-size: 4rem;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--gold_color);
+}
+.container {
+  width: 90%;
+  max-width: 34.37rem;
+  margin-top: 3rem;
+  max-height: 90vh;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3rem; 
+  border-radius: 1rem;
+}
+.wheel_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#spinWheel {
+  max-height: inherit;
+  width: inherit;
+  transform: rotate(270deg);
+}
+#spin_btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 26%;
+  width: 26%;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  background: var(--spin_background);
+  color: var(--white_color);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+.fa-solid {
+  position: absolute;
+  top: -8%;
+  left: 43.7%;
+  font-size: 4rem;
+  color: var(--green_color);
+  transform: rotate(-225deg);
+}
+#text {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--gold_color);
+  font-weight: 500;
+}
+/* Styling for Deposit Container */
+.deposit-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: var(--gold_color); /* Use the desired color */
+  color: var(--white_color);
+  padding: 10px;
+  /* Add additional styles as needed */
+}
+
+/* Styling for Balance Container (formerly Withdraw Container) */
+.balance-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: var(--green_color); /* Use the desired color */
+  color: var(--white_color);
+  padding: 10px;
+  /* Add additional styles as needed */
+}
+/* Style the "Enter deposit here" text and the "Deposit" button */
+#depositInput::placeholder {
+  color: #3498db; /* Change this color to your preferred color */
+  padding: 40px;
+}
+
+
+#depositButton {
+  background-color: #3498db; /* Change this color to your preferred color */
+  color: #ffffff; /* Text color */
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the deposit button on hover (optional) */
+#depositButton:hover {
+  background-color: #b93329; /* Change this color to your preferred hover color */
+}

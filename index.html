@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Matteo Bruni">
+    <title>Registration - theWheel</title>
+
+    <!-- Include the particle animation CSS and JavaScript -->
+    <link href="css/particles.css" rel="stylesheet"/> <!-- Include the same CSS file for particle animation -->
+    <link href="css/auth.css" rel="stylesheet"/> <!-- Add your CSS file for registration styling -->
+</head>
+
+<body>
+    <div id="tsparticles"></div> <!-- Particle animation container -->
+
+    <main class="box">
+        <h2>Registration</h2>
+        <form method="post" action="register.php"> <!-- Ensure that the 'action' attribute points to your PHP script -->
+            <div class="inputBox">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="inputBox">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="inputBox">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <button type="submit">Register</button>
+                <a class="login-link" href="login.php">Already have an account? Login</a>
+
+            </div>
+        </form>
+    </main>
+
+    <footer>
+    </footer>
+
+    <!-- Include the particle animation JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js"
+            integrity="sha256-D6LXCdCl4meErhc25yXnxIFUtwR96gPo+GtLYv89VZo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+</body>
+
+</html>
